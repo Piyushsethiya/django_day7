@@ -1,0 +1,9 @@
+{% extends 'header.html' %}
+{% block content %}
+<h1>hello django</h1>
+<ul>{% for element in category %}
+    <li>{{element}}{{element.description}} </li>
+</ul>
+
+{% endfor %}
+{% endblock %}
